@@ -6,12 +6,15 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   
   <title> Tracking intro component </title>
   <!-- FONT - Barlow Condensed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   
@@ -19,7 +22,10 @@
     <div class="container">
       <div class="logo"><img src="images/logo.svg" alt="logo"></div>
 
-      <ul class="list-links">
+      <div class="menu-mobile">
+        <i id='btn-mobile' class='bx bx-menu'></i>
+      </div>
+      <ul id='list-ul'class="list-links">
         <li><a href="#">PRODUCT</a></li>
         <li><a href="#">FEATURES</a></li>
         <li><a href="#">PRICING</a></li>
@@ -46,8 +52,11 @@
       </div>
     </div>
 
-    <div class="background-gray"></div>
-    <div class="mockup"></div>
+    <div class="background-gray">
+      <img src="images/illustration-devices.svg"/>
+    </div>
+    
+
   </main>
 
 </body>
